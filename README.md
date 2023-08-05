@@ -1,6 +1,4 @@
-# CPP Barebone
-
-barebone env for cpp projects
+# Analysis of RISCV (ELF) Binaries 
 
 ## Build
 
@@ -15,7 +13,7 @@ barebone env for cpp projects
 $ conan install -pr=conanprofile.txt -of=<build> -b=missing -s=build_type=Debug .
 $ cmake --preset conan-debug -G "Ninja Multi-Config"
 $ cmake --build <build> --config Debug
-# the executable rpg should be found in <build>/Debug/
+# the executable should be found in <build>/src/Debug/
 ```
 
 ### Release
@@ -23,6 +21,6 @@ $ cmake --build <build> --config Debug
 $ conan install -pr=conanprofile.txt -of=<build> -b=missing -s=build_type=Release .
 $ cmake --preset conan-release -G "Ninja Multi-Config"
 $ cmake --build <build> --config Release
-# the executable rpg should be found in <build>/Release/
+# the executable should be found in <build>/src/Release/
 ```
 

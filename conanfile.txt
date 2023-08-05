@@ -3,6 +3,7 @@ doxygen/1.9.4
 
 [requires]
 spdlog/1.12.0
+elfio/3.8
 
 [generators]
 CMakeDeps

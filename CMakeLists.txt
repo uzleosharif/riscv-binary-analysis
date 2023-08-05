@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.26)
 
-project(dsa CXX)
+project(rparse CXX)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
@@ -22,7 +22,7 @@ if(CMAKE_BUILD_TYPE STREQUAL "Debug")
     "${CMAKE_CXX_FLAGS} -Werror -stdlib=libc++ \
     -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic \
     -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation \
-    -fsanitize=address")
+    -fno-omit-frame-pointer -fsanitize=address")
 endif()
 
 option(ENABLE_COVERAGE "Enable coverage reporting for gcc/clang" OFF)
